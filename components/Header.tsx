@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Header = () => {
@@ -9,12 +10,16 @@ const Header = () => {
       </div>
       <div>
         <ul className="flex gap-3">
-          <li className="bg-green-700/45 p-2 rounded-xl hover:bg-green-700/80 w-24 text-center">
-            Jobs
-          </li>
-          <li className="bg-green-700/45 p-2 rounded-xl hover:bg-green-700/80 w-24 text-center">
-            Login
-          </li>
+          <Link href={"/my-jobs"}>
+            <li className="bg-green-700/45 p-2 rounded-xl hover:bg-green-700/80 px-5 text-center">
+              Saved Jobs
+            </li>
+          </Link>
+          <Link href={"/login"}>
+            <li className="bg-green-700/45 p-2 rounded-xl hover:bg-green-700/80 w-24 text-center">
+              Login
+            </li>
+          </Link>
         </ul>
       </div>
     </div>

@@ -10,7 +10,7 @@ const Results = ({ items }: { items: any }) => {
 
   return (
     <div
-      className="p-4 flex flex-col gap-4 w-full bg-black/55 shadow-2xl rounded-md"
+      className="p-4 flex flex-col gap-4 w-full bg-blue-950/70 shadow-2xl rounded-md"
       key={items.job_id}
     >
       <div className="flex justify-between">
