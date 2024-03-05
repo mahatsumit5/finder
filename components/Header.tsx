@@ -11,8 +11,8 @@ const Header = () => {
       <div>
         <ul className="flex gap-3">
           <Link href={"/my-jobs"}>
-            <li className="bg-green-700/45 p-2 rounded-xl hover:bg-green-700/80 px-5 text-center">
-              Saved Jobs
+            <li className="bg-green-700/45 p-2 rounded-xl hover:bg-green-700/80 px-3 text-center">
+              Jobs
             </li>
           </Link>
           <Link href={"/login"}>

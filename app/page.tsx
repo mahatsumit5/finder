@@ -8,9 +8,9 @@ import { useState } from "react";
 
 export default function Home() {
   const [results, setResults] = useState<any>([]);
-  console.log(results);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start gap-10 max-w-5xl rounded-md  mx-auto   ">
+    <main className="flex min-h-screen flex-col items-center justify-between gap-10 max-w-5xl rounded-md  mx-auto   ">
       <Header />
       {/* hero */}
       <div className="relative w-full h-[40vh] md:h-[80vh]">
