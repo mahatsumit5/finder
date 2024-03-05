@@ -12,6 +12,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start gap-10 max-w-5xl rounded-md  mx-auto   ">
       <Header />
+      {/* hero */}
+      <div className="relative w-full h-[40vh] md:h-[80vh]">
+        <Image src={"/hero.png"} alt="hero" fill />
+      </div>
       <SearchJobs setResults={setResults} />
       <div className="flex flex-col gap-5 w-full  justify-center overflow-y-auto">
         {results.map((item: any) => {
